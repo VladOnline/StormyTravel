@@ -18,7 +18,7 @@ public class GUIMain {
         jPanel.add(jButton1);
         jPanel.add(jButton2);
         jPanel.setLayout(new GridLayout(3,0,1,1));
-            jPanel.revalidate();
+        jPanel.revalidate();
 
         }
 
@@ -26,7 +26,7 @@ public class GUIMain {
             frame.setVisible(true);
             frame.setResizable(true);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setTitle("my app");
+            frame.setTitle("Stormy Travel");
             Toolkit toolkit = Toolkit.getDefaultToolkit();
             Dimension dimension = toolkit.getScreenSize();
             frame.setBounds(dimension.width / 2 - 125, dimension.height / 2 - 125, 250, 250);
