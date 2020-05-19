@@ -3,10 +3,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GUIMain {
-
-        static JFrame frame = new JFrame();
-        static   JPanel jPanel = new JPanel();
+public class GUIMain extends JComponent {
+    static JFrame frame = new JFrame();
+    static JPanel jPanel = new JPanel();
     JButton jButton =new JButton("Start");
     JButton jButton1 =new JButton("Options");
     JButton jButton2 =new JButton("Exit");
@@ -17,7 +16,6 @@ public class GUIMain {
         jPanel.add(jButton);
         jPanel.add(jButton1);
         jPanel.add(jButton2);
-        jPanel.setLayout(new GridLayout(3,0,1,1));
         jPanel.revalidate();
 
         }

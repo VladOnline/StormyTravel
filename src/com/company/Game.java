@@ -3,7 +3,6 @@ package com.company;
 import java.awt.*;
 import java.awt.event.KeyListener;
 import java.awt.image.BufferStrategy;
-import java.awt.image.BufferedImage;
 import java.util.concurrent.ThreadPoolExecutor;
 
 public class Game implements Runnable {
