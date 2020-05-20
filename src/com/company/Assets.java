@@ -19,13 +19,16 @@ public class Assets {
     public static BufferedImage[] btn_start;
     public static BufferedImage[] btn_exit;
     public static BufferedImage GUI_fond;
+    public static BufferedImage Forest;
+
     public static BufferedImage inventoryScreen;
 
     public static void init() {
         font28 = FontLoader.loadFont("res/fonts/slkscr.ttf", 28);
 
-        SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/texture/sheet.png"));
-        SpriteSheet GUIFond = new SpriteSheet(ImageLoader.loadImage("/GUI/background1.png"));
+        SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/texture/srdftgyнекваh.png"));
+        SpriteSheet Button = new SpriteSheet(ImageLoader.loadImage("/texture/sheetbut_not_shit.png"));
+        SpriteSheet GUIFond = new SpriteSheet(ImageLoader.loadImage("/GUI/ddos.png"));
         SpriteSheet Test = new SpriteSheet(ImageLoader.loadImage("/GUI/LostInTheForest_MenuButton_Start.png"));
 
         inventoryScreen = ImageLoader.loadImage("/texture/inventoryScreen.png");
@@ -33,14 +36,16 @@ public class Assets {
         wood = sheet.crop(width, height, width, height);
 
         btn_start = new BufferedImage[2];
-        btn_start[0] = sheet.crop(width * 6, height * 4, width * 2, height);
-        btn_start[1] = sheet.crop(width * 6, height * 5, width * 2, height);
+        btn_start[0] = Button.crop(width * 6, height * 4, width * 2, height);
+        btn_start[1] = Button.crop(width * 6, height * 5, width * 2, height);
 
         btn_exit = new BufferedImage[2];
-        btn_exit[0] = Test.getSheet();
-        btn_exit[1] = Test.getSheet();
+        btn_exit[0] = Button.crop(width * 6, height * 6, width * 2, height);
+        btn_exit[1] = Button.crop(width * 6, height * 7, width * 2, height);
 
         GUI_fond = GUIFond.getSheet();
+
+        Forest= Button.crop(width * 6, height * 6, width * 2, height);
 
         player_down = new BufferedImage[2];
         player_up = new BufferedImage[2];
